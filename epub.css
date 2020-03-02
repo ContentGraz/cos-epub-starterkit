@@ -1,0 +1,236 @@
+/* This defines styles and classes used in the book */
+body { margin: 5%; text-align: justify; font-size: medium; }
+code { font-family: monospace; }
+h1 { text-align: left; }
+h2 { text-align: left; }
+h3 { text-align: left; }
+h4 { text-align: left; }
+h5 { text-align: left; }
+h6 { text-align: left; }
+h1.title { }
+h2.author { }
+h3.date { }
+ol.toc { padding: 0; margin-left: 1em; }
+ol.toc li { list-style-type: none; margin: 0; padding: 0; }
+a.footnoteRef { vertical-align: super; }
+em, em em em, em em em em em { font-style: italic;}
+em em, em em em em { font-style: normal; }
+
+
+Fonts:
+body:
+@font-face {
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+src:url("Georgia.ttf");
+}
+
+H2 and H3:
+@font-face {
+font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+src:url("Helvetica-normal.ttf");
+}
+
+
+body {
+    font-family: "Georgia", sans-serif;
+    margin: 2em;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 16pt;
+    word-break: break-normal;
+    overflow-wrap: break-word;
+    line-break: normal;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    text-indent: 3mm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', monospace;
+    font-weight: 300;
+    hyphens: none !important;
+    -moz-hyphens: none !important;
+    -webkit-hyphens: none !important;
+    adobe-hyphenate: none !important;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 3px solid #AF2181;
+    padding-top: 10px;
+    margin-right: 15px;
+    word-break: break-normal;
+    line-break: normal;
+}
+
+
+h2 {
+    font-size: 1.9em;
+    line-height: 1.0em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height:1.0em;
+    margin-top: 1.2em;
+    margin-bottom: 18pt;
+}
+
+a {
+    color: #AF2181;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0F0;
+    text-decoration: underline;
+}
+
+hr {
+    border-width: 0;
+    height: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #AF2181;
+    margin: 15px 0;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 0.5em;
+    line-height: 0.5em;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 0.5em;
+    line-height: 0.5em;
+}
+
+.footnotes {
+    font-size: 0.8em;
+}
+
+.footnotes li p a:last-child {
+    font-size: 0.6em;
+    line-height: 0.6em;
+    margin-left: 5px;
+}
+
+ul, ol, dl {
+    margin: 1em 0 1em 0;
+    text-align: left;
+}
+
+li {
+    orphans: 2;
+    widows: 2;
+    margin: 0;
+}
+
+li p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+img.bloglink{
+    margin-top:5px;
+    border: 1px solid transparent;
+}
+
+img.bloglink:hover {
+    border: solid #0F0 1px;
+}
+
+figure{
+    margin-left:0px;
+}
+
+figcaption{
+    display:none;
+}
+
+div.fig{
+    width:100%;
+}
+
+
+img.fig {
+/*    width:100%;
+    max-width:900px;
+
+*/
+    max-width: 98%;
+    max-height: 98%;
+    width: auto;
+    height: auto;
+}
+
+
+
+div.summary{
+    border-top: 3px solid #0F0;
+    border-bottom: 3px solid #0F0; 
+    page-break-inside: avoid;
+    page-break-after: always;
+    -webkit-column-break-inside: avoid;
+    -webkit-column-break-after: always;
+    font-weight: bold;    
+    page-break-before: always;
+    -webkit-column-break-before: always;
+}
+
+div.summary li{
+    margin-bottom: 1em;
+}
+
+div#cover-image{
+    text-align:center;
+}
+
+div.end{
+    text-align:center;
+    page-break-before: always;
+    page-break-after: always;   
+    -webkit-column-break-after: always;
+    -webkit-column-break-after: always;
+
+}
+
+img.end{
+    margin-top:100px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+a.footnoteRef {
+vertical-align: super;
+line-height: normal;
+font-size: 0.5em;
+}
+
+
+div#description{
+    margin-top:80px;
+    margin-bottom:20px;
+    page-break-after: always;
+    -webkit-column-break-after: always;
+    font-weight: normal;    
+}
+
+
